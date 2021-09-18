@@ -84,6 +84,7 @@ header h3{
     padding-bottom: 20px;
     font-size: 3rem;
     font-weight: bolder;
+    text-align: center;
 }
 .services-text p{
     padding-bottom: 20px;
@@ -116,7 +117,6 @@ header h3{
 }
 .help-section .help-container1 {
     flex-direction: column;
-    width: 49%;
     align-items: center;
     justify-content: center;
 }
@@ -129,7 +129,6 @@ header h3{
 }
 .help-section .help-container2 {
     flex-direction: column;
-    width: 49%;
     justify-content: center;
 }
 .help-section .help-container2 h3{
@@ -145,14 +144,12 @@ header h3{
 }
 .quality-section {
     width: 100%;
-    height: 80vh;
     background: silver;
     align-content: space-between;
     padding: 30px 50px 0 50px;
 }
 .quality-section .image-container {
     flex-direction: column;
-    width: 45%;
     height: 100%;
     align-items:center;
     flex-grow: 1;
@@ -207,7 +204,6 @@ header h3{
     cursor: pointer;
 }
 .our-services {
-    height: 70vh;
     padding: 60px 80px 100px 80px;
     width: 100%;
 }
@@ -248,7 +244,6 @@ header h3{
     background:navy;
     color: white;
     padding: 100px;
-    height: 80vh;
 }
 .about-section .about-text {
     width: 45%;
@@ -339,6 +334,10 @@ header h3{
     .banner-section .image-container {
         height: 25rem;
     }
+    .banner-text {
+        justify-content: flex-end;
+        padding-bottom: 30px;
+    }
     .banner-text .service-image{
         display: none;
     }
@@ -428,7 +427,7 @@ header h3{
         flex-direction: column;
         background: silver;
         align-content: space-between;
-        padding: 30px 50px 0 50px;
+        padding: 30px 50px;
     }
     .quality-section .image-container {
         flex-direction: column;
@@ -499,6 +498,7 @@ header h3{
     }
     .service {
         margin: 30px 0;
+        width: 100%;
     }
     .service .image-container {
         width: fit-content;
@@ -526,20 +526,23 @@ header h3{
         color: white;
         padding: 50px;
         flex-direction: column;
+        width: 100%;
+
     }
     .about-section .about-text {
         flex-direction: column;
         justify-content: center;
         padding-left: 50px;
+        width: 100%;
     }
     .about-text h4{
         font-size: 1.5rem;
     }
     .about-text h3{
-        font-size: 4.5rem;
+        font-size: 3.5rem;
     }
     .about-text h2{
-        font-size: 5.5rem;
+        font-size: 4.5rem;
         font-weight: bolder;
     }
     .about-section .about-image {
@@ -584,8 +587,8 @@ header h3{
         flex-direction: column;
     }
     .button-section button {
-        padding: 20px 30px;
-        width: fit-content;
+        padding: 20px 80px;
+        width: 100%;
         border-radius: 5px;
     }
     .button-section .book-now {
