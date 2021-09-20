@@ -331,6 +331,15 @@ header h3{
 }
 
 @media (max-width: 780px) {
+    header {
+        padding: 20px 80px;
+    }
+    .banner-text {
+        padding-left: 80px;
+    }
+    .services-section {
+        padding: 0;
+    }
     .help-section {
         flex-direction: column;
     }
@@ -354,6 +363,22 @@ header h3{
         flex-direction: column;
         padding: 100px 50px;
     }
+    .about-section .about-text {
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: row; 
+        justify-content: left;
+    }
+    .about-text h4 {
+        width: 100%;
+    }
+    .about-text h3 {
+        font-size: 3.5rem;
+    }
+    .about-text h2 {
+        font-size: 4.0rem;
+        padding-left: 10px;
+    }
     .about-section .about-image {
         width: 100%;
     }
@@ -365,6 +390,9 @@ header h3{
 
 
 @media (max-width: 480px) {
+    header {
+        padding: 20px 40px;
+    }
     .banner-section .image-container {
         height: 25rem;
     
@@ -372,6 +400,7 @@ header h3{
     .banner-text {
         justify-content: flex-end;
         padding-bottom: 30px;
+        padding-left: 40px;
     }
     .banner-text .service-image{
         display: none;
@@ -391,7 +420,7 @@ header h3{
     }
 
     .services-section{
-        padding: 40px 0 30px 0;
+        padding: 0;
     }
     .services-text {
         flex-direction: column;
@@ -433,12 +462,12 @@ header h3{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 10px;
+        padding: 0px;
     }
     .help-section .help-container1 p{
         font-size: 1rem;
         font-weight: 600;
-        margin-bottom: 40px;
+        margin-bottom: 0px;
     }
     .help-section .help-container2 {
         flex-direction: column;
@@ -447,12 +476,12 @@ header h3{
         padding: 10px;
     }
     .help-section .help-container2 h3{
-        font-size: 2.3rem;
+        font-size: 2rem;
         font-weight: bolder;
         padding-bottom: 10px;
     }
     .help-section .help-container2 h4{
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: bolder;
         color: red;
         padding-bottom: 30px;
@@ -523,7 +552,7 @@ header h3{
         width: 100%;
     }
     .our-services h2 {
-        font-size: 3.4rem;
+        font-size: 3rem;
         font-weight: bolder;
     }
     .service-container {
@@ -575,11 +604,12 @@ header h3{
         font-size: 1.5rem;
     }
     .about-text h3{
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
     .about-text h2{
-        font-size: 4.5rem;
+        font-size: 3.5rem;
         font-weight: bolder;
+        padding: 0;
     }
     .about-section .about-image {
         width: 100%
