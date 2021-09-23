@@ -41,6 +41,7 @@ header h3{
     flex-direction: column;
     justify-content: center;
     padding-left: 50px;
+    width: 70%;
 }
 .banner-text h3{
     font-size: 4rem;
@@ -53,11 +54,11 @@ header h3{
 .banner-text hr{
     height: 10px;
     background-color: white;
-    width: 50%;
+    width: 90%;
 }
 .service-image {
     display: flex;
-    width: 50%;
+    width: 90%;
     padding: 20px 0;
 }
 .service-image img{
@@ -119,6 +120,11 @@ header h3{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 48%;
+}
+
+.help-container1 img, .help-container2 img {
+    width: 100%;
 }
 .help-section .help-container1 p{
     width: 70%;
@@ -130,6 +136,7 @@ header h3{
 .help-section .help-container2 {
     flex-direction: column;
     justify-content: center;
+    width: 48%;
 }
 .help-section .help-container2 h3{
     font-size: 2.3rem;
@@ -145,24 +152,23 @@ header h3{
 .quality-section {
     width: 100%;
     background: silver;
-    align-content: space-between;
+    justify-content: space-between;
     padding: 30px 50px 0 50px;
 }
 .quality-section .image-container {
     flex-direction: column;
-    height: 100%;
+    width: 40%;
     align-items:center;
     flex-grow: 1;
     flex-shrink: 0;
     overflow: hidden;
-    justify-items: right;
 }
 .quality-section .image-container img{
     height: 600px;
 }
 .quality-section .quality-text{
     flex-direction: column;
-    width: 55%;
+    width: 50%;
     justify-content: center;
     justify-items: left;
 }
@@ -175,7 +181,7 @@ header h3{
     height: 10px;
     background-color: red;
     border: none;
-    width: 90%;
+    width: 100%;
     margin: 20px 0;
 }
 .quality-text p{
@@ -244,12 +250,13 @@ header h3{
     background:navy;
     color: white;
     padding: 100px;
+    justify-content: space-between;
 }
 .about-section .about-text {
-    width: 45%;
+    width: 43%;
     flex-direction: column;
     justify-content: center;
-    padding-left: 50px;
+    padding-left: 40px;
 }
 .about-text h4{
     font-size: 1.5rem;
@@ -262,7 +269,7 @@ header h3{
     font-weight: bolder;
 }
 .about-section .about-image {
-    width: 55%;
+    width: 52%;
 }
 .about-image .about-image-row {
     width: 100%;
@@ -336,6 +343,7 @@ header h3{
     }
     .banner-text {
         padding-left: 80px;
+        justify-content: flex-end;
     }
     .services-section {
         padding: 0;
@@ -343,7 +351,7 @@ header h3{
     .help-section {
         flex-direction: column;
     }
-    .help-section .help-container1 img{
+    .help-section .help-container1, .help-section .help-container2 {
         width: 100%;
     }
     .help-section .help-container1 p {
@@ -352,6 +360,10 @@ header h3{
     }
     .help-container2-text{
         padding-left: 40px;
+    }
+
+    .quality-section .image-container img {
+        width: 100%;
     }
     .quality-text h2 {
         font-size: 3.5rem;
@@ -385,9 +397,7 @@ header h3{
     .about-image-row img {
         height: 300px;
     }
-
 }
-
 
 @media (max-width: 480px) {
     header {
@@ -395,7 +405,6 @@ header h3{
     }
     .banner-section .image-container {
         height: 25rem;
-    
     }
     .banner-text {
         justify-content: flex-end;
@@ -475,8 +484,11 @@ header h3{
         justify-content: center;
         padding: 10px;
     }
+    .help-container2-text {
+        padding-left: 0;
+    }
     .help-section .help-container2 h3{
-        font-size: 2rem;
+        font-size: 1.8rem;
         font-weight: bolder;
         padding-bottom: 10px;
     }
@@ -499,15 +511,17 @@ header h3{
         align-items:center;
         overflow: hidden;
         justify-items: right;
+        width: 90%;
     }
     .quality-section .image-container img{
         height: 600px;
+        width: 100%;
     }
     .quality-section .quality-text{
         width: 100%;
         flex-direction: column;
         justify-content: center;
-        justify-items: left;
+        margin-top: 30px;
     }
     .quality-text h2{
         color:navy;
@@ -664,22 +678,5 @@ header h3{
     .button-section .book-now:hover{
         cursor: pointer;
         background-color: darkred;
-    }
-    .button-section input{
-        background: none;
-        border: none;
-        color: whitesmoke;
-        font-size: 0.9rem;
-        font-weight: 550;
-        cursor: pointer;
-    }
-    .button-section .call-us {
-        border: 1px solid black;
-        color: black;
-        background: none;
-        cursor: pointer;
-    }
-    .button-section .call-us input{
-        color: black
     }
 }
